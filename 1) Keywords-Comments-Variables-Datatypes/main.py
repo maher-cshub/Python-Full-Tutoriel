@@ -42,6 +42,8 @@ print("*********************************************************\n")
     *) variable is a location stored in memory,
     *) variable has an adress(where he stored in memory) and value 
     *) we give a variable a name (identifier) so we can access it
+    *) identifier can't (be as a keyword ,start with number or special character(_ - # ..)) can be(combination of letter-numbers-special characters )
+    *) when we declare a variable we can't redeclare it again
     *) in python we dont need to mention the type of the variable when we declare it
 """ 
 
@@ -70,6 +72,21 @@ str1="hello"
 str2='hi'
 str3="""welcome"""
 
+#collection (used to store multiple variable in a single variable (like lists-tuples-sets-dictionaries))
+
+#array/list DATATYPE (collection of same type(but in python nevermind) ,ordered ,indexed,changeable , allow duplicates )
+greeting = ["hello", "hi", "hey"] #list
+
+#tuple (same as array but unchangeable)
+count_3 = (1, 2, 3) #tuple
+
+#sets (collection (unordered, unindexed, unchangeable) don't allow duplicates)
+vowels = {'a', 'e', 'i' , 'o', 'u'} #set
+
+#dictionary (collection (orderd, indexed, changeable) don't allow duplicates)
+lower_to_upper = {'a':'A', 'b':'B', 'c':'C'} #dictionary
+
+
 #note to print text and variable values we separate text from varibale with ","
 print("*********************(3) DATATYPES-VARIABLES ************************\n")
 print ("Type of (",nothing,")" ,"is ",type(nothing))
@@ -80,4 +97,8 @@ print ("Type of (",cpx,")" , "is ", type(cpx))
 print ("Type of (",str1,")" ,"is ",type(str1))
 print ("Type of (",str2,")" ,"is ",type(str2))
 print ("Type of (",str3,")" ,"is ",type(str3))
+print ("Type of (",greeting,")" , "is ", type(greeting))
+print ("Type of (",count_3,")" ,"is ",type(count_3))
+print ("Type of (",vowels,")" ,"is ",type(vowels))
+print ("Type of (",lower_to_upper,")" ,"is ",type(lower_to_upper))
 print("*********************************************************\n")
