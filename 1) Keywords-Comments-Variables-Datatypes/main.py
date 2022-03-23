@@ -42,7 +42,7 @@ print("*********************************************************\n")
     *) variable is a location stored in memory,
     *) variable has an adress(where he stored in memory) and value 
     *) we give a variable a name (identifier) so we can access it
-    *) identifier can't (be as a keyword ,start with number or special character(_ - # ..)) can be(combination of letter-numbers-special characters )
+    *) identifier can't (be as a keyword ,start with number or special character(_ - # ..)) can be(combination of letter-numbers- and (_) )
     *) when we declare a variable we can't redeclare it again
     *) in python we dont need to mention the type of the variable when we declare it
 """ 
