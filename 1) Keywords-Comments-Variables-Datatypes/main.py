@@ -39,7 +39,8 @@ print("*********************************************************\n")
 
 """ 
     3) DATA TYPES, VARIABLES, ....
-    *) variable is a location stored in memory, 
+    *) variable is a location stored in memory,
+    *) variable has an adress(where he stored in memory) and value 
     *) we give a variable a name (identifier) so we can access it
     *) in python we dont need to mention the type of the variable when we declare it
 """ 
@@ -69,7 +70,7 @@ str1="hello"
 str2='hi'
 str3="""welcome"""
 
-
+#note to print text and variable values we separate text from varibale with ","
 print("*********************(3) DATATYPES-VARIABLES ************************\n")
 print ("Type of (",nothing,")" ,"is ",type(nothing))
 print ("Type of (",f,")" ,"is ",type(f))
