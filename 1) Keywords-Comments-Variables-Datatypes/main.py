@@ -34,7 +34,7 @@ comment
 import keyword #called module (learn it later)
 print("*********************(2) KEYWORDS ************************\n")#here print() is used to dispaly text ,\n to jump to new line 
 print(keyword.kwlist) #here print is used to display results on screen, ... 
-print("*********************************************************\n")
+print("************************************************************\n")
 
 
 """ 
@@ -66,6 +66,8 @@ f = 123456789.e3 #here we declared a variable named f and we assign to it the va
 #boolean DATATYPE ( either True or False)
 b = False #here we declared a variable named b and we assign to it the value False
 
+#char DATATYPE (a single character)
+c = 'Q' #here we declared a variable named c and we assign to it the value 'Q', in python a char is a string of length = 1
 
 #string DATATYPE (means text like "hello" 'hi' '''how are you''')
 str1="hello" 
@@ -87,12 +89,13 @@ vowels = {'a', 'e', 'i' , 'o', 'u'} #set
 lower_to_upper = {'a':'A', 'b':'B', 'c':'C'} #dictionary
 
 
-#note to print text and variable values we separate text from varibale with ","
+#note to print text and variable values we separate text from varibale with ",", type is a built-iin function to show the type 
 print("*********************(3) DATATYPES-VARIABLES ************************\n")
 print ("Type of (",nothing,")" ,"is ",type(nothing))
 print ("Type of (",f,")" ,"is ",type(f))
 print ("Type of (",i,")" ,"is ",type(i))
 print ("Type of (",b,")" ,"is ",type(b))
+print ("Type of (",c,")" ,"is ",type(c))
 print ("Type of (",cpx,")" , "is ", type(cpx))
 print ("Type of (",str1,")" ,"is ",type(str1))
 print ("Type of (",str2,")" ,"is ",type(str2))
@@ -101,4 +104,4 @@ print ("Type of (",greeting,")" , "is ", type(greeting))
 print ("Type of (",count_3,")" ,"is ",type(count_3))
 print ("Type of (",vowels,")" ,"is ",type(vowels))
 print ("Type of (",lower_to_upper,")" ,"is ",type(lower_to_upper))
-print("*********************************************************\n")
+print("**********************************************************************\n")
