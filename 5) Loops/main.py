@@ -58,7 +58,7 @@ print(f"Guess a number from (0 to 10), 'You only have {total_attempts} attemps'\
 ## while (is_correct is False) "solution is not correct" and (nb_attempts < total attempts) keep giving chances to user
 ## we exit the loop in 1 of 2 situations
 ## 1st situation : (is_correct is True) "solution is correct" ,so the users wins here
-## 2nd situation : (nb_attempts >= total attempts) ,so the user loses
+## 2nd situation : (nb_attempts >= total attempts) ,so the user
 while(is_correct == False and nb_attemps < total_attempts):
     
     ##at each iteration we increment the nb_attemps
@@ -83,6 +83,34 @@ if(is_correct == True):
 ##case if user loses
 if(nb_attemps > (total_attempts-1)):
     print(f"\nYou Lose !!! the answer is {correct_answer}")
+
+
+print("------------------------LOOPS WITH 'BREAK-PASS'------------------------")
+
+print("------------------------SIMPLE SEARCHING GAME USING FOR LOOP------------------------")
+
+##list of numbers 
+numbers = [4,1,8,99,768,125,100,55,7,166,1788,662,265,892,145,230,0]
+
+##lets search if the list contains the number 7
+exists = False
+user_number = int(input("Enter a number to check if it exists in a  list ? "))
+for number in numbers:
+    if(number == user_number):
+        exists = True
+        break ## used to exit the loop directly without executing the next iterations of the loop!!!
+
+if (exists == True):
+    print(f"{user_number} exists in the list")
+else:
+    print(f"{user_number} doesn't exist in the list")
+
+##lets print all odd numbers only
+print("all odd number :")
+for number in numbers:
+    if(number % 2 == 0):
+        continue ##used to skip this iteration of the loop and directly executes the next iteration of the loop
+    print(number)
 
 
 
