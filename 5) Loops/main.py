@@ -36,3 +36,53 @@ for i in range(3):
     sleep(1)
 
 print("let's Go !!!")
+
+
+print("------------------------WHILE LOOP------------------------")
+
+print("------------------------SIMPLE GUESS THE NUMBER GAME USING WHILE LOOP------------------------")
+
+import random 
+
+is_correct = False ##to check if user guessed the right number
+
+total_attempts = 5 ## total attempts
+
+nb_attemps = 0 ## to count the number of attempts
+
+correct_answer = random.randint(0,10) ##the correct answer
+
+##describe the game to user
+print(f"Guess a number from (0 to 10), 'You only have {total_attempts} attemps'\n")
+
+## while (is_correct is False) "solution is not correct" and (nb_attempts < total attempts) keep giving chances to user
+## we exit the loop in 1 of 2 situations
+## 1st situation : (is_correct is True) "solution is correct" ,so the users wins here
+## 2nd situation : (nb_attempts >= total attempts) ,so the user loses
+while(is_correct == False and nb_attemps < total_attempts):
+    
+    ##at each iteration we increment the nb_attemps
+    nb_attemps = nb_attemps + 1
+    
+    ##get the user guess
+    user_number = int(input(f"'{total_attempts-(nb_attemps-1)} attemp(s) left', Enter your number ? "))
+    
+    ##check the user guess
+    if(user_number == correct_answer):
+        print(f"You guessed it in {nb_attemps} attempt(s) !!! \n") 
+        is_correct = True
+    else:
+        if(nb_attemps < total_attempts):
+            print("Wrong  ,Guess Again !!! \n")
+
+
+##case if user wins
+if(is_correct == True):
+    print(f"\nYou Win !!! the answer is {correct_answer}")
+
+##case if user loses
+if(nb_attemps > (total_attempts-1)):
+    print(f"\nYou Lose !!! the answer is {correct_answer}")
+
+
+
