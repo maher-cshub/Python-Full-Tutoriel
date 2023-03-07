@@ -13,7 +13,6 @@
 
 ## 
 
-from time import sleep
 
 
 print("------------------------FOR LOOP------------------------")
@@ -111,6 +110,5 @@ for number in numbers:
     if(number % 2 == 0):
         continue ##used to skip this iteration of the loop and directly executes the next iteration of the loop
     print(number)
-
 
 
