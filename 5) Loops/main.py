@@ -30,6 +30,7 @@ print("------------------------SIMPLE COUNTER USING FOR LOOP--------------------
 ## after third iteration the code will exit the loop because if "i" will take value 3 then it wont be included in range(3), 3 is out of (range(3))
 ## sleep(1) allows the execution to freeze for 1s
 
+from time import sleep
 for i in range(3):
     print(i+1)
     sleep(1)
