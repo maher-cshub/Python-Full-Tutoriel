@@ -66,6 +66,15 @@ print(f"Total Sum = {sum}")
 sum = total_sum()
 print(f"Total Sum = {sum}")
 
+print("------------------------RETURNING MULTIPLE VALUES FROM A FUNCTION------------------------")
+##to return multiple values from a function we separate them with a comma (,)
+
+def show_full_name(firstname,lastname):
+    return firstname,lastname
+
+x,y = show_full_name("Steve","Jobs")
+print(f"your full name is {x} {y}")
+
 
 print("------------------------ANONYMOUS FUNCTION------------------------")
 ##ANONYMOUS FUNCTION (called lambda) is a function without a name
