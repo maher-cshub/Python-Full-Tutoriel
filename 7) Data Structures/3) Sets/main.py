@@ -40,6 +40,8 @@ try:
     set1.remove(123) ##rises a KeyError if value not found
 except KeyError:
     print("Value not found")
+random_elt = set1.pop()
+print(random_elt)
 
 print("-----------------------EMPTY A SET-----------------------")
 print(set2)
