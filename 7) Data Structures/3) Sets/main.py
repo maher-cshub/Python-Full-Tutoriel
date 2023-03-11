@@ -130,3 +130,5 @@ set3_cp = set3.copy()
 subset = set1_cp.issubset({15,32,1})
 print(subset)
 print(set1_cp)
+
+
